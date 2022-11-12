@@ -6,8 +6,8 @@ documentation and examples for making a Soft Keyboard, which was complicated by 
 * Google hasn't maintained the old "Soft Keyboard" example project. It's not readily buildable as-was in Android Studio, 
    and massaging it into a form Android Studio CAN deal with is a nontrivial undertaking
 
-* Pretty much EVER bit of example code from Google is based on the assumption that your "Soft Keyboard" actually IS going to be
-   a conventional "virtual keyboard" with actual tappable buttons representing keys.
+* Pretty much EVERY bit of example code from Google is based on the premise  that your "Soft Keyboard" actually IS going to be
+   a conventional "virtual keyboard" with tappable buttons representing keys.
 
 * Compounding the problem, Google turned around and deprecated (as of API 29) one of the fundamental classes ("KeyboardView") that almost every
    example project in existence *depends* upon. Yeah, you can hunt down the files from the AOSP repository and put them into 
@@ -21,7 +21,9 @@ rename the packages and classes into your own.
 
 In reality, if you're first discovering this project after approximately 2024, the
 outcome of trying to load it directly into Android Studio will probably be.... lots
-of error messages, red-squiggles, and total dysfunction. So, here's what I recommend doing instead:
+of error messages, red-squiggles, and total dysfunction.  Let's face it... Android
+has a long history of completely breaking any and all example code every year or two.
+So, here's what I recommend doing instead:
 
 1. Create a new Android project with a blank Activity.
 2. Copy and paste MiNKI's <service> block from AndroidManifest.xml
